@@ -1,0 +1,277 @@
+h1{
+  color: #007F61;
+}
+
+
+.first-heading{
+  display: flex;
+  justify-content: center;
+}
+hr {
+ /* Ensures the <hr> element is treated as a block-level element */
+  width: 20%; /* Adjust this value to set the width of the horizontal line */
+  height: 1px; /* Sets the height of the horizontal line */
+  border: none; /* Removes the default border of the <hr> element */
+  background-color: #000;
+  margin-top: 40px; /* Sets the color of the horizontal line */
+}
+.first-only-box {
+  margin: 20px auto; /* Add margin around the box */
+  border: 3px solid green;
+  height: 150px;
+  width: 900px;
+  display: flex;
+  cursor: pointer;
+
+}
+
+.first-box {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+ 
+}
+
+.first-one {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.label{
+  font-size: 20px;
+}
+.dkk{
+  margin-left: 34px; 
+  font-weight: bold; 
+  font-size: 20px; 
+}
+.off{
+  font-weight: bold; 
+  font-size: 20px;
+}
+
+.second-box{
+  margin: 0 auto;
+  border: 3px solid red;
+  height: 250px;
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #F4FBF9;
+}
+.second-one{
+  display: flex;
+  flex-direction: column;
+}
+.dkk-one{
+  font-size: 15px;
+  font-family: 200;
+}
+.third-only-box{
+  margin: 20px auto; /* Add margin around the box */
+  border: 3px solid yellow;
+  height: 150px;
+  width: 900px;
+  display: flex;
+  cursor: pointer;
+}
+.third-box{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+}
+.third-one{
+  display: flex;
+  flex-direction: column;
+}
+.fourth-box{
+ display: flex;
+ justify-content: space-around;
+ margin-top: 30px;
+}
+
+.second-two {
+  position: relative;
+  width: 80px; /* Set the maximum width for the container */
+  overflow: hidden; 
+  margin-top: -100px;/* Hide overflowing content */
+}
+.second-three{
+  margin-top: -100px;
+}
+
+.second-two::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  right: 0;
+  height: 1px;
+  background-color: black; /* Set the color of the horizontal cut */
+}
+.select-container {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange elements vertically */
+  margin-top: 10px; /* Add some spacing between the label and select */
+  margin-left: 34px;
+
+}
+
+.select-container label {
+  font-weight: bold; /* Optionally make the label bold */
+ 
+}
+.select-container select {
+  border: 2px solid rgb(139, 121, 121); /* Set the border to grey color */
+  padding: 2px; /* Add padding to create space inside the select */
+  width: 100%; /* Set the width to fill the container */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  border-radius: 5px;
+}
+.select-container-display{
+  display: none;
+  justify-content: space-between;
+  margin-top: 10px;
+  
+}
+/* Add a class for the second select-container-display */
+.select-container-displaysecond {
+  display: none;
+  justify-content: space-between;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.number-marker{
+  margin-left: -22px;
+  margin-bottom: -20px;
+}
+.fifth-box{
+  color: white;
+  background-color: #007F61;
+  border: 1px solid #007F61;
+  border-radius: 3px;
+  height: 50px;
+  font-size: 20px;
+  width: 900px;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.free{
+  color: #007F61;
+}
+.second-three{
+  display: flex;
+  flex-direction: column;
+}
+.first-only-box.expanded {
+  height: 250px;
+  transition: height 0.5s ease;
+}
+.container-select {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange elements vertically */
+  margin-top: 10px; /* Add some spacing between the label and select */
+  margin-left: 34px;
+
+}
+
+.container-select label {
+  font-weight: bold; /* Optionally make the label bold */
+ 
+}
+.container-select select {
+  border: 2px solid rgb(139, 121, 121); /* Set the border to grey color */
+  padding: 2px; /* Add padding to create space inside the select */
+  width: 100%; /* Set the width to fill the container */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  border-radius: 5px;
+}
+.select-display-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.marker-number{
+  margin-left: -22px;
+  margin-bottom: -20px;
+}
+.last{
+  display: flex;
+  justify-content: space-around;
+  
+  margin-left: 200px;
+ }
+ /* Add this CSS to your existing styles */
+.first-only-box, .third-only-box
+{
+  transition: all 0.3s ease; /* Add a smooth transition */
+}
+
+
+ /* CSS for mobile screens (up to 768px width) */
+@media screen and (max-width: 768px) {
+  .first-only-box,
+  .second-box,
+  .third-only-box {
+    width: 100%;
+  }
+  
+  .first-only-box.expanded, .three-only-box.expanded {
+    height: 300px;
+  }
+  
+  .first-box,
+  .second-box,
+  .third-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .select-container,
+  .container-select {
+    margin: 10px 0;
+  }
+  
+  .last {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+ .free, .dkk{
+  font-size: 16px;
+ }
+  .second-two{
+    margin-top: -10px;
+  }
+  .second-three{
+    margin-top: -10px;
+    margin-left: -30px;
+    text-align: center;
+  }
+  .second-box{
+    height: 290px;
+  }
+
+
+}
+
+/* CSS for desktop screens (min-width 769px) */
+@media screen and (min-width: 769px) {
+  .first-only-box,
+  .second-box,
+  .third-only-box {
+    width: 900px;
+  }
+
+}
